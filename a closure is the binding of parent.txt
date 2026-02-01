@@ -1,0 +1,88 @@
+a closure is the binding of parent fun variable inside the child function
+   aclosure allows js programmer to use parent fun mem inside the child fun
+a closure is crayed when 
+a function declared insidwe the another fun 
+a inner fun remmer the var of the outer fun scope 
+even agtre the execution of the outer fun is finished 
+
+
+
+when a fun is define
+ inside another fun
+
+
+
+Active code page: 65001
+
+C:\Users\AMD\Desktop\web tech\React>cd first-app
+
+C:\Users\AMD\Desktop\web tech\React\first-app>npm i json-server
+
+up to date, audited 198 packages in 3s
+
+46 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+C:\Users\AMD\Desktop\web tech\React\first-app>npx json-server --watch src/database/Data.json --port 0102
+--watch/-w can be omitted, JSON Server 1+ watches for file changes by default
+JSON Server started on PORT :102
+Press CTRL-C to stop
+Watching src/database/Data.json...
+
+(˶ᵔ ᵕ ᵔ˶)
+Active code page: 65001
+
+C:\Users\AMD\Desktop\web tech\React>cd first-app
+
+C:\Users\AMD\Desktop\web tech\React\first-app>npm install 
+
+up to date, audited 198 packages in 3s
+
+46 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+C:\Users\AMD\Desktop\web tech\React\first-app>npm run dev
+
+> first-app@0.0.0 dev
+> vite
+
+
+  VITE v7.1.7  ready in 979 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+
+  VITE v7.1.7  ready in 979 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+
+
+
+
+
+
+  VITE v7.1.7  ready in 979 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+
+
+  VITE v7.1.7  ready in 979 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+
+
+
