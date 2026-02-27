@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modern Website</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body{
+            margin:0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #e3f2fd, #fce4ec);
+        }
+
+        /* NAVBAR */
+        .navbar{
+            background:#4a148c;
+            color:white;
+            padding:15px 40px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo{
+            display:flex;
+            align-items:center;
+            font-size:22px;
+            font-weight:bold;
+        }
+
+        .logo img{
+            width:45px;
+            margin-right:10px;
+        }
+
+        .navbar ul{
+            list-style:none;
+            display:flex;
+            gap:25px;
+            margin:0;
+            padding:0;
+        }
+
+        .navbar ul li a{
+            text-decoration:none;
+            color:white;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        .navbar ul li a:hover{
+            color:yellow;
+        }
+
+        .search-bar input{
+            padding:7px;
+            border-radius:5px;
+            border:none;
+        }
+
+        .search-bar button{
+            padding:7px 12px;
+            border:none;
+            background:#ff4081;
+            color:white;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        .search-bar button:hover{
+            background:#f50057;
+        }
+
+        /* HERO SECTION */
+        .hero{
+            height:400px;
+            background:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover no-repeat;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:white;
+            font-size:40px;
+            font-weight:bold;
+            text-shadow:2px 2px 8px black;
+        }
+
+        section{
+            padding:50px 80px;
+            background:white;
+            margin:20px;
+            border-radius:10px;
+        }
+
+        h2{
+            color:#4a148c;
+            text-align:center;
+        }
+
+        /* TABLE */
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:20px;
+        }
+
+        th{
+            background:#f8bbd0;
+        }
+
+        table, th, td{
+            border:1px solid #ddd;
+            padding:12px;
+            text-align:center;
+        }
+
+        /* LOGIN FORM */
+        .login-form{
+            width:400px;
+            margin:30px auto;
+            padding:30px;
+            background:#f3e5f5;
+            border-radius:10px;
+            box-shadow:0 0 15px rgba(0,0,0,0.1);
+        }
+
+        .login-form input{
+            width:100%;
+            padding:12px;
+            margin:12px 0;
+            border-radius:5px;
+            border:1px solid #ccc;
+        }
+
+        .login-form button{
+            width:100%;
+            padding:12px;
+            background:#4a148c;
+            color:white;
+            border:none;
+            border-radius:5px;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        .login-form button:hover{
+            background:#6a1b9a;
+        }
+
+        /* GALLERY */
+        .gallery{
+            display:flex;
+            flex-wrap:wrap;
+            gap:20px;
+            justify-content:center;
+        }
+
+        .gallery img{
+            width:250px;
+            height:170px;
+            border-radius:10px;
+            transition:0.4s;
+            object-fit:cover;
+        }
+
+        .gallery img:hover{
+            transform:scale(1.08);
+        }
+
+        /* FOOTER */
+        footer{
+            background:#4a148c;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+        }
+
+        video, audio{
+            display:block;
+            margin:20px auto;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:768px){
+            .navbar{
+                flex-direction:column;
+                gap:15px;
+            }
+
+            .navbar ul{
+                flex-direction:column;
+                align-items:center;
+            }
+
+            section{
+                padding:30px;
+                margin:10px;
+            }
+
+            .login-form{
+                width:90%;
+            }
+
+            .gallery img{
+                width:100%;
+                height:auto;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+        MyBrand
+    </div>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+    </div>
+</div>
+
+<!-- HERO IMAGE -->
+<div class="hero">
+    Welcome to MyBrand
+</div>
+
+<!-- VIDEO -->
+<section>
+    <h2>Our Introduction Video</h2>
+    <video width="600" controls>
+        <source src="./istockphoto-1279498796-640_adpp_is.mp4" type="video/mp4">
+    </video>
+</section>
+
+<!-- MUSIC -->
+<section>
+    <h2>Background Music</h2>
+    <audio controls>
+        <source src="./kornevmusic-epic-478847.mp3" type="audio/mp3">
+    </audio>
+</section>
+
+<!-- ABOUT -->
+<section>
+    <h2>About Our Website</h2>
+    <p style="text-align:center;">
+        We provide high quality services with complete customer satisfaction.
+        Our branches are located across major cities and we ensure premium support
+        and professional experience for all our customers.
+    </p>
+</section>
+
+<!-- TABLE -->
+<section>
+    <h2>Our Branch Locations</h2>
+    <table>
+        <tr>
+            <th>Branch</th>
+            <th>City</th>
+            <th>Contact</th>
+        </tr>
+        <tr>
+            <td>Main Branch</td>
+            <td>Bangalore</td>
+            <td>9876543210</td>
+        </tr>
+        <tr>
+            <td>City Branch</td>
+            <td>Mysore</td>
+            <td>9123456780</td>
+        </tr>
+        <tr>
+            <td>North Branch</td>
+            <td>Delhi</td>
+            <td>9988776655</td>
+        </tr>
+    </table>
+</section>
+
+<!-- LOGIN -->
+<section>
+    <h2>Login</h2>
+    <div class="login-form">
+        <input type="text" placeholder="Username">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button>Login</button>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section>
+    <h2>Image Gallery</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+        <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+        <img src="https://images.unsplash.com/photo-1495567720989-cebdbdd97913">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 MyBrand | Designed with ❤️ | All Rights Reserved
+</footer>
+
+</body>
+</html>

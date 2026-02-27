@@ -1,0 +1,161 @@
+<html>
+<head>
+    <title>Job Registration Form</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f6ff;
+        }
+        .navbar{
+            background-color: #0b3d91;
+            padding: 15px 0;
+        }
+
+        .navbar ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .navbar ul li{
+            display: inline;
+            margin: 0 25px;
+        }
+
+        .navbar ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .navbar ul li a:hover{
+            color: yellow;
+        }
+        h1{
+            text-align: center;
+            color: #0b3d91;
+            margin-top: 30px;
+        }
+
+    
+        form{
+            width: 1000px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 12px gray;
+        }
+
+        label{
+            font-weight: bold;
+        }
+
+        input, select, textarea{
+            width: 100%;
+            padding: 6px;
+            margin-top: 5px;
+        }
+
+        .inline{
+            width: auto;
+        }
+
+        button{
+            width: 100%;
+            padding: 10px;
+            background-color: #0b3d91;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover{
+            background-color: #072a66;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <h1>Job Application Form</h1>
+
+    <form>
+
+        <label>First Name:</label>
+        <input type="text" name="fname"><br><br>
+
+        <label>Last Name:</label>
+        <input type="text" name="lname"><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email"><br><br>
+
+        <label>Phone Number:</label>
+        <input type="tel" name="phn"><br><br>
+
+        <label>Select Job Role:</label>
+        <select>
+            <option>-----Select Job Role-----</option>
+            <option>Software Developer</option>
+            <option>Web Developer</option>
+            <option>Java Developer</option>
+            <option>Python Developer</option>
+            <option>Full Stack Developer</option>
+        </select><br><br>
+
+        <label>Date of birth:</label>
+        <input type="date" name="dob"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" class="inline"> Male
+        <input type="radio" name="gender" class="inline"> Female
+        <input type="radio" name="gender" class="inline"> Other
+        <br><br>
+
+        <label>Profile Photo:</label>
+        <input type="file" name="photo"><br><br>
+
+        <label>Qualification:</label>
+        <input type="text" name="qualification"><br><br>
+
+        <label>Skills:</label><br>
+        <input type="checkbox" class="inline"> HTML
+        <input type="checkbox" class="inline"> JAVA
+        <input type="checkbox" class="inline"> PYTHON
+        <input type="checkbox" class="inline"> SQL
+        <br><br>
+
+        <label>Experience (Years):</label>
+        <input type="number" name="exp"><br><br>
+
+        <label>Notice Period:</label>
+        <input type="text" name="notice"><br><br>
+
+        <label>Resume:</label>
+        <input type="file" name="resume"><br><br>
+
+        <label>Address:</label>
+        <textarea rows="3"></textarea><br><br>
+
+        <button type="submit">Submit Application</button>
+
+    </form>
+
+</body>
+</html>
